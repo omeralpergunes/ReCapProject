@@ -17,7 +17,7 @@ namespace Core.DataAccess.EntityFramework
             using (TRecapDB reCapDB = new TRecapDB())
             {
                 var addedEntity = reCapDB.Entry(car);
-                addedEntity.State = Microsoft.EntityFrameworkCore.EntityState.Added;
+                addedEntity.State = EntityState.Added;
                 reCapDB.SaveChanges();
             }
         }
